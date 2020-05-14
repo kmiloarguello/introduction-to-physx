@@ -1,0 +1,33 @@
+If you are running MacOS or Linux or do not have Visual Studio, below I give instructions on how to set up for running under Ubuntu. So either you can try to copy these steps for MacOS or use an Ubuntu Virtual Machine to run the code.
+
+
+1. On Ubuntu, install these packages:
+
+	necessary:
+		libglm-dev
+		libsdl2-dev
+		g++
+		libglew-dev
+
+	optional: 
+		libglu1-mesa-dev 
+		freeglut3-dev 
+		mesa-common-dev	
+		libglew2.0  or  libglew2.1
+		glew-utils
+		libsdl2-2.0-0
+		mesa-utils
+	
+Remember that to install a package ABC, you have to run the command "sudo apt-get install ABC".
+
+2. On the command prompt, type:
+
+	export MESA_GL_VERSION_OVERRIDE=3.3
+	
+3. Unzip the Linux code from the course website. To compile the code, simple type:
+
+	make
+	
+4. To run the code:
+
+	./main
